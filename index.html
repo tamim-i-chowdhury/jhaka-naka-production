@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jhaka Naka Production</title>
+    <!-- Tailwind CSS CDN link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts connecting link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Connecting this script for customizing style -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            // colors customization in tailwind css
+            colors: {
+              clifford: "#da373d",
+              yellow: "#FECC02",
+              offBlack: "#131313",
+              gray: "#4E4E4E",
+            },
+            // google fonts customization in tailwind css
+            fontFamily: {
+              bebas: ["Bebas Neue", "cursive"],
+              monserrat: ["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav
+      class="flex flex-col justify-between py-2 items-center sm:flex-row sm:px-12 md:px-24 lg:px-36 uppercase h-20 font-bebas"
+    >
+      <h1 class="text-3xl">Jhaka Naka Production</h1>
+      <ul class="flex gap-x-5 text-lg">
+        <li>About Us</li>
+        <li>Our Movies</li>
+        <li>Services</li>
+      </ul>
+    </nav>
+  </body>
+</html>
